@@ -65,9 +65,72 @@ img {
   margin: 0 auto;
 }
 
+.carousel .owl-nav .owl-prev,
+.carousel .owl-nav .owl-next {
+  position: absolute;
+  cursor: pointer;
+  font-size: 60px !important;
+  color: #fff !important;
+  top: 0;
+  height: calc(100% - 50px);
+  width: 70px;
+  transition: opacity 300ms linear;
+  opacity: 0.7;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel .owl-nav .owl-prev:hover,
+.carousel .owl-nav .owl-next:hover {
+  opacity: 0.2;
+  background-color: transparent;
+}
+
+.carousel .owl-nav .owl-prev,
+.carousel .owl-nav .owl-prev:hover {
+  left: 0;
+}
+
+.carousel .owl-nav .owl-next,
+.carousel .owl-nav .owl-next:hover {
+  right: 0;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 25px 7px;
+  background: rgba(234, 213, 23, 0.3568627451);
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity 0.2s ease;
+  border-radius: 30px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #e29e0c;
+}
+
 /* --------------------------------- layouts -------------------------------- */
 h1 {
   color: rgb(168, 47, 234);
   font-size: 180px;
   text-align: center;
+}
+
+.carousel-sec {
+  padding-top: 150px;
+}
+
+.item {
+  height: 150px;
+  background-color: rgb(212, 125, 43);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item h4 {
+  font-size: 34px;
+  color: #ffffff;
 }/*# sourceMappingURL=main.css.map */
