@@ -1,5 +1,54 @@
-h1 {
-  color: rgb(168, 47, 234);
-  font-size: 180px;
-  text-align: center;
+.header {
+  border-bottom: 1px solid $white;
+  background-color: $black;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.logo-wrap {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  @include tablet {
+    padding-bottom: 33px;
+    padding-top: 33px;
+  }
+}
+.logo-icon {
+  fill: $accent;
+}
+.logo-desk {
+  fill: $accent;
+}
+.header-list {
+  display: none;
+  @include tablet {
+    display: flex;
+    gap: 45px;
+    padding-right: 11px;
+    padding-top: 10px;
+  }
+}
+.header-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 6.43;
+  color: $white;
+  transition: color $transition;
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+}
+.open-menu-btn {
+  border: transparent;
+  background-color: transparent;
+  padding-top: 10px;
+}
+.menu-icon {
+  fill: $white;
 }

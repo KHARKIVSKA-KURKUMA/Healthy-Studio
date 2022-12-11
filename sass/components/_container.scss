@@ -1,20 +1,21 @@
-// .container {
-//     width: 100%;
-//     padding: 0 15px;
-//     margin: 0 auto;
-//     @include mobile {
-//       width: 480px;
-//     }
-//     @include tablet {
-//       width: 768px;
-//     }
-//     @include desktop {
-//       width: 1200px;
-//     }
-//   }
-// без адаптивності
 .container {
-  width: 1200px;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
+  @include mobile {
+    width: 480px;
+  }
+  @include tablet {
+    width: 768px;
+  }
+  @include desktop {
+    width: 1100px;
+    padding: 0 165px;
+  }
 }
+// без адаптивності
+// .container {
+//   width: 1110px;
+//   padding: 0 165px;
+//   margin: 0 auto;
+// }

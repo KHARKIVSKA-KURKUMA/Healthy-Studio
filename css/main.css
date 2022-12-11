@@ -40,6 +40,10 @@ img {
   display: block;
 }
 
+body {
+  font-family: Arimo, sans-serif;
+}
+
 .link {
   text-decoration: none;
 }
@@ -60,9 +64,25 @@ img {
 
 /* ------------------------------- components ------------------------------- */
 .container {
-  width: 1200px;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1100px;
+    padding: 0 165px;
+  }
 }
 
 .carousel .owl-nav .owl-prev,
@@ -113,14 +133,74 @@ img {
 }
 
 /* --------------------------------- layouts -------------------------------- */
-h1 {
-  color: rgb(168, 47, 234);
-  font-size: 180px;
-  text-align: center;
+.header {
+  border-bottom: 1px solid #ffffff;
+  background-color: #1a1a1a;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-wrap {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .logo-wrap {
+    padding-bottom: 33px;
+    padding-top: 33px;
+  }
+}
+
+.logo-icon {
+  fill: #34c759;
+}
+
+.logo-desk {
+  fill: #34c759;
+}
+
+.header-list {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header-list {
+    display: flex;
+    gap: 45px;
+    padding-right: 11px;
+    padding-top: 10px;
+  }
+}
+
+.header-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 6.43;
+  color: #ffffff;
+  transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-link:hover, .header-link:focus {
+  color: #34c759;
+}
+
+.open-menu-btn {
+  border: transparent;
+  background-color: transparent;
+  padding-top: 10px;
+}
+
+.menu-icon {
+  fill: #ffffff;
 }
 
 .carousel-sec {
   padding-top: 150px;
+  display: none;
 }
 
 .item {

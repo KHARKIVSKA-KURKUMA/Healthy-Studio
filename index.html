@@ -12,13 +12,74 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&family=Inter:wght@400;500;600&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="./css/owl.carousel.min.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
+    <!-- ------------------------------- header -------------------------------- -->
     <header class="header">
-      <h1>Example</h1>
+      <div class="container">
+        <div class="logo-wrap">
+          <svg class="logo-icon" width="25" height="24">
+            <use href="./img/icons.svg#icon-logo"></use>
+          </svg>
+          <svg class="logo-desk" width="170" height="15">
+            <use href="./img/icons.svg#icon-logo-desk"></use>
+          </svg>
+        </div>
+        <nav class="header-nav">
+          <ul class="header-list list">
+            <li class="header-item">
+              <a href="" class="header-link link">Menu</a>
+            </li>
+            <li class="header-item">
+              <a href="" class="header-link link">Recipes</a>
+            </li>
+            <li class="header-item">
+              <a href="" class="header-link link">Chefs</a>
+            </li>
+            <li class="header-item">
+              <a href="" class="header-link link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <button type="button" class="open-menu-btn">
+          <svg class="menu-icon" width="35" height="35">
+            <use href="./img/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- ------------------------------ mob-menu ------------------------------- -->
+      <div class="header-menu">
+        <div class="menu-container">
+          <button type="button" class="close-btn">
+            <svg class="menu-clode" width="20" height="20">
+              <use href="./img/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <ul class="header-mob-list list">
+            <li class="header-mob-item">
+              <a href="" class="header-mob-link link">Menu</a>
+            </li>
+            <li class="header-mob-item">
+              <a href="" class="header-mob-link link">Recipes</a>
+            </li>
+            <li class="header-mob-item">
+              <a href="" class="header-mob-link link">Chefs</a>
+            </li>
+            <li class="header-mob-item">
+              <a href="" class="header-mob-link link">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
       <section class="carousel-sec">
