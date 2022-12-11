@@ -1,6 +1,7 @@
 .header {
   border-bottom: 1px solid $white;
-  background-color: $black;
+  position: absolute;
+  width: 100%;
   .container {
     display: flex;
     align-items: center;
@@ -36,7 +37,7 @@
 .header-link {
   font-weight: 700;
   font-size: 14px;
-  line-height: 6.43;
+  line-height: 1.5;
   color: $white;
   transition: color $transition;
   &:hover,
@@ -48,7 +49,53 @@
   border: transparent;
   background-color: transparent;
   padding-top: 10px;
+  @include tablet {
+    display: none;
+  }
 }
 .menu-icon {
   fill: $white;
+}
+/* ---------------------------------- menu ---------------------------------- */
+.header-menu {
+  position: fixed;
+  z-index: 1;
+  background-color: $white;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  @include tablet {
+    display: none;
+  }
+}
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.close-btn {
+  position: absolute;
+  border: transparent;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 10px 12px;
+  top: 10px;
+  right: 15px;
+}
+.header-mob-list {
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.header-mob-link {
+  font-weight: 700;
+  font-size: 44px;
+  color: $black;
+  transition: color $transition;
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
 }

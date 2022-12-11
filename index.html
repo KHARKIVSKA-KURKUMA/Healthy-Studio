@@ -50,17 +50,17 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="open-menu-btn">
+        <button type="button" class="open-menu-btn" data-menu-open>
           <svg class="menu-icon" width="35" height="35">
             <use href="./img/icons.svg#icon-menu"></use>
           </svg>
         </button>
       </div>
       <!-- ------------------------------ mob-menu ------------------------------- -->
-      <div class="header-menu">
+      <div class="header-menu is-hidden" data-menu>
         <div class="menu-container">
-          <button type="button" class="close-btn">
-            <svg class="menu-clode" width="20" height="20">
+          <button type="button" class="close-btn" data-menu-close>
+            <svg class="menu-close" width="30" height="30">
               <use href="./img/icons.svg#icon-cross"></use>
             </svg>
           </button>
@@ -82,6 +82,40 @@
       </div>
     </header>
     <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-title">Your favourite food delivered hot & fresh</h1>
+          <p class="hero-desk">
+            HEALTHY SWITCHER chefs do all the prep work, like peeling, chopping
+            & marinating, so you can cook a fresh homemade dinner in just 15
+            minutes.
+          </p>
+          <button type="button" class="hero-btn btn">Order Now</button>
+          <ul class="hero-list list">
+            <li class="hero-item">
+              <svg class="hero-icon" width="20" height="20">
+                <use href="./img/icons.svg#icon-clock"></use>
+              </svg>
+              <p class="hero-subtitle">Today 10:00 am - 7:00 pm</p>
+              <p class="hero-list-desk">Working hours</p>
+            </li>
+            <li class="hero-item">
+              <svg class="hero-icon" width="18" height="18">
+                <use href="./img/icons.svg#icon-compass"></use>
+              </svg>
+              <p class="hero-subtitle">Velyka Vasylkivska 100</p>
+              <p class="hero-list-desk">Get Directions</p>
+            </li>
+            <li class="hero-item">
+              <svg class="hero-icon" width="18" height="18">
+                <use href="./img/icons.svg#icon-phone"></use>
+              </svg>
+              <p class="hero-subtitle">+38 (063)833 24 15</p>
+              <p class="hero-list-desk">Call Online</p>
+            </li>
+          </ul>
+        </div>
+      </section>
       <section class="carousel-sec">
         <div class="container">
           <div class="carousel owl-carousel owl-theme">
