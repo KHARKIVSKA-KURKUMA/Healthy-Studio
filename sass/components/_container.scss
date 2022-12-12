@@ -2,6 +2,9 @@
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
+  @include mobile-min {
+    width: 430px;
+  }
   @include mobile {
     width: 480px;
   }

@@ -20,6 +20,9 @@
   .multiple-items {
     margin: 0 auto;
     width: 250px;
+    @include mobile-min {
+      width: 310px;
+    }
     @include mobile {
       width: 355px;
     }
