@@ -1,0 +1,25 @@
+%events-style {
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: $events-sub;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 1;
+  @include mobile {
+    font-size: 70px;
+  }
+  @include desktop {
+    font-size: 100px;
+  }
+}
+%center-absolute {
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+// @extend %events-style;
+// @extend %center-absolute;

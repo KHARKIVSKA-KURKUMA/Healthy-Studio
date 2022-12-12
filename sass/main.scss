@@ -2,6 +2,7 @@
 @import './utils/vars';
 @import './utils/hidden';
 @import './utils/mixin';
+@import './utils/placeholder';
 /* ---------------------------------- base ---------------------------------- */
 @import './base/reset';
 @import './base/common';
@@ -12,6 +13,7 @@
 /* --------------------------------- layouts -------------------------------- */
 @import './layouts/header';
 @import './layouts/hero';
-@import './layouts/carousel';
+@import './layouts/about';
+@import './layouts/work';
 // @import '';
 @import './layouts/footer';

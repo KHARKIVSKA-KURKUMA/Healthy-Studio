@@ -1,0 +1,86 @@
+.about {
+  background-color: $black;
+  position: relative;
+  z-index: 1;
+  height: 230px;
+  @include tablet {
+    height: 350px;
+  }
+  @include desktop {
+    height: 450px;
+  }
+  .container {
+    background-color: $events;
+    padding-bottom: 90px;
+    position: absolute;
+    @extend %center-absolute;
+    top: -280px;
+    z-index: 10;
+  }
+  .multiple-items {
+    margin: 0 auto;
+    width: 250px;
+    @include mobile {
+      width: 355px;
+    }
+    @include tablet {
+      width: 600px;
+    }
+    @include desktop {
+      width: 735px;
+    }
+  }
+}
+.about-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.2em;
+  color: $title;
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  padding-top: 68px;
+  margin-bottom: 30px;
+  @include mobile {
+    font-size: 22px;
+    padding-top: 80px;
+  }
+  @include tablet {
+    font-size: 30px;
+    padding-top: 68px;
+  }
+  @include desktop {
+    padding-top: 95px;
+  }
+}
+.about-subtitle {
+  @extend %events-style;
+  top: 0;
+  padding-top: 45px;
+  @extend %center-absolute;
+}
+.about-desk {
+  font-size: 14px;
+  line-height: 1.88;
+  text-align: center;
+  color: $desk;
+  margin-bottom: 90px;
+  @include tablet {
+    font-size: 16px;
+  }
+}
+.item {
+  margin: 3px;
+  @include mobile {
+    margin: 6px;
+  }
+  @include tablet {
+    margin: 10px;
+  }
+  @include desktop {
+    width: 350px;
+    height: 270px;
+    margin: 17px;
+  }
+}

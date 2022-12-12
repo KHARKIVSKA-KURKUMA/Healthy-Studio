@@ -18,8 +18,8 @@
       href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&family=Inter:wght@400;500;600&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -82,6 +82,7 @@
       </div>
     </header>
     <main>
+      <!-- -------------------------------- hero --------------------------------- -->
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Your favourite food delivered hot & fresh</h1>
@@ -116,28 +117,87 @@
           </ul>
         </div>
       </section>
-      <section class="carousel-sec">
-        <div class="container">
-          <div class="carousel owl-carousel owl-theme">
-            <div class="item" style="width: 250px"><h4>1</h4></div>
-            <div class="item" style="width: 250px"><h4>2</h4></div>
-            <div class="item" style="width: 250px"><h4>3</h4></div>
-            <div class="item" style="width: 250px"><h4>4</h4></div>
-            <div class="item" style="width: 250px"><h4>5</h4></div>
-            <div class="item" style="width: 250px"><h4>6</h4></div>
-            <div class="item" style="width: 250px"><h4>7</h4></div>
-            <div class="item" style="width: 250px"><h4>8</h4></div>
-            <div class="item" style="width: 250px"><h4>9</h4></div>
-            <div class="item" style="width: 250px"><h4>10</h4></div>
-            <div class="item" style="width: 250px"><h4>11</h4></div>
-            <div class="item" style="width: 250px"><h4>12</h4></div>
+      <!-- -------------------------------- about -------------------------------- -->
+      <section class="about">
+        <div class="about-wrap">
+          <div class="container">
+            <h2 class="about-title">The Basics Of Healthy Food</h2>
+            <p class="about-subtitle">About</p>
+            <p class="about-desk">
+              In aliqua ea ullamco ad est ex non deserunt nulla. Consectetur
+              sint ea aliquip aliquip consectetur voluptate est. Eu minim dolore
+              laboris enim mollit voluptate irure esse aliquip.
+            </p>
+            <div class="multiple-items">
+              <div class="item">
+                <img src="./img/about-1.jpg" alt="food" />
+              </div>
+              <div class="item">
+                <img src="./img/about-2.jpg" alt="table setting" />
+              </div>
+              <div class="item">
+                <img src="./img/about-1.jpg" alt="food" />
+              </div>
+              <div class="item">
+                <img src="./img/about-2.jpg" alt="table setting" />
+              </div>
+            </div>
           </div>
+        </div>
+      </section>
+      <!-- -------------------------------- work --------------------------------- -->
+      <section class="work">
+        <div class="container">
+          <h2 class="work-title">How it works</h2>
+          <p class="work-desk">Work</p>
+          <ul class="work-list list">
+            <li class="work-item">
+              <a href="" class="work-link link">
+                <h3 class="work-subtitle">Pick meals</h3>
+                <p class="work-text">
+                  Choose your meals from our diverse weekly menu. Find gluten or
+                  dairy free, low carb & veggie options.
+                </p>
+              </a>
+            </li>
+            <li class="work-item">
+              <a href="" class="work-link link">
+                <h3 class="work-subtitle">Choose how often</h3>
+                <p class="work-text">
+                  Our team of chefs do the prep work - no more chopping,
+                  measuring, or sink full of dishes!
+                </p>
+              </a>
+            </li>
+            <li class="work-item">
+              <a href="" class="work-link link">
+                <h3 class="work-subtitle">fast deliveries</h3>
+                <p class="work-text">
+                  Your freshly prepped 15-min dinner kits arrive on your
+                  doorstep in a refrigerated box.
+                </p>
+              </a>
+            </li>
+            <li class="work-item">
+              <a href="" class="work-link link">
+                <h3 class="work-subtitle">tasty meals</h3>
+                <p class="work-text">
+                  Gobble makes cooking fast, so you have more time to unwind and
+                  be with family.
+                </p>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
     <footer class="footer"></footer>
     <script src="./js/jquery-3.6.1.min.js"></script>
-    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/jquery-migrate-1.2.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <script src="./js/carousel.js"></script>
     <script src="./js/menu-mob.js"></script>
   </body>

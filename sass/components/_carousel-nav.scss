@@ -1,41 +1,52 @@
-.carousel .owl-nav .owl-prev,
-.carousel .owl-nav .owl-next {
+.slick-prev {
+  left: -35px;
+  @include mobile {
+    left: -50px;
+  }
+  @include tablet {
+    left: -70px;
+  }
+  @include desktop {
+    left: -120px;
+  }
+}
+.slick-next {
+  right: -35px;
+  @include mobile {
+    right: -60px;
+  }
+  @include tablet {
+    right: -70px;
+  }
+  @include desktop {
+    right: -120px;
+  }
+}
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
   position: absolute;
-  cursor: pointer;
-  font-size: 60px !important;
-  color: #fff !important;
-  top: 0;
-  height: calc(100% - 50px);
-  width: 70px;
-  transition: opacity 300ms linear;
-  opacity: 0.7;
-  margin: 0;
+  top: 50%;
   padding: 0;
-}
-.carousel .owl-nav .owl-prev:hover,
-.carousel .owl-nav .owl-next:hover {
-  opacity: 0.2;
-  background-color: transparent;
-}
-.carousel .owl-nav .owl-prev,
-.carousel .owl-nav .owl-prev:hover {
-  left: 0;
-}
-.carousel .owl-nav .owl-next,
-.carousel .owl-nav .owl-next:hover {
-  right: 0;
-}
-.owl-theme .owl-dots .owl-dot span {
-  width: 10px;
-  height: 10px;
-  margin: 25px 7px;
-  background: #ead5175b;
-  display: block;
-  -webkit-backface-visibility: visible;
-  transition: opacity 0.2s ease;
-  border-radius: 30px;
-}
-.owl-theme .owl-dots .owl-dot.active span,
-.owl-theme .owl-dots .owl-dot:hover span {
-  background: #e29e0c;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  background: transparent;
+  width: 30px;
+  height: 30px;
+  border: 2px solid $events-sub;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include tablet {
+    width: 50px;
+    height: 50px;
+  }
+  @include desktop {
+    width: 60px;
+    height: 60px;
+  }
 }
