@@ -2,6 +2,12 @@
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
+  @include mobile-360px {
+    width: 360px;
+  }
+  @include mobile-390px {
+    width: 390px;
+  }
   @include mobile-min {
     width: 430px;
   }

@@ -20,6 +20,12 @@
   .multiple-items {
     margin: 0 auto;
     width: 250px;
+    @include mobile-360px {
+      width: 280px;
+    }
+    @include mobile-390px {
+      width: 300px;
+    }
     @include mobile-min {
       width: 310px;
     }

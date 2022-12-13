@@ -105,6 +105,16 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
+@media screen and (min-width: 360px) {
+  .container {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 390px) {
+  .container {
+    width: 390px;
+  }
+}
 @media screen and (min-width: 430px) {
   .container {
     width: 430px;
@@ -500,6 +510,16 @@ body {
 .about .multiple-items {
   margin: 0 auto;
   width: 250px;
+}
+@media screen and (min-width: 360px) {
+  .about .multiple-items {
+    width: 280px;
+  }
+}
+@media screen and (min-width: 390px) {
+  .about .multiple-items {
+    width: 300px;
+  }
 }
 @media screen and (min-width: 430px) {
   .about .multiple-items {
