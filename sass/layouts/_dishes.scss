@@ -1,0 +1,156 @@
+.dishes {
+  background-color: $black;
+  .container {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    position: relative;
+  }
+  img {
+    border-radius: 8px;
+  }
+}
+.dishes-title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 2.5;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: $title;
+  position: relative;
+  z-index: 3;
+  margin-bottom: 90px;
+  &::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 60px;
+    background-color: $accent;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: -28px;
+  }
+}
+.dishes-desk {
+  @extend %events-style;
+  @extend %center-absolute;
+  top: 0;
+  padding-top: 30px;
+}
+.dishes-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.dishes-item {
+  width: 350px;
+  background: $darkGray;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  position: relative;
+}
+.dishes-wrap {
+  padding: 28px;
+}
+.dishes-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0, 0.3);
+  border-radius: 50%;
+  top: 14px;
+}
+.link-icon {
+  fill: $white;
+}
+.dishes-subject {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1;
+  color: $title;
+  margin-bottom: 5px;
+}
+.dishes-food-desk {
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: -0.15px;
+  color: $desk-2;
+  margin-bottom: 20px;
+}
+.dishes-preview {
+  font-size: 13px;
+  line-height: 1.38;
+  letter-spacing: -0.1625px;
+  color: $desk-3;
+  margin-bottom: 25px;
+}
+.review-wrap {
+  display: flex;
+  align-items: center;
+}
+.stars-wrap {
+  margin-right: 15px;
+  gap: 5px;
+  display: flex;
+}
+.full-stars {
+  fill: $events-sub;
+  transition: fill $transition;
+  .star-link:hover &,
+  .star-link:focus & {
+    fill: $stars;
+  }
+}
+.half-stars {
+  fill: $events-sub;
+  transition: fill $transition;
+  .star-link:hover &,
+  .star-link:focus & {
+    fill: $stars;
+  }
+}
+.empty-stars {
+  fill: $events-sub;
+  transition: fill $transition;
+  .star-link:hover &,
+  .star-link:focus & {
+    fill: $stars;
+  }
+}
+.counts-reviews {
+  font-weight: 900;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  color: $grey-again;
+}
+.dishes-btn {
+  margin-left: auto;
+  font-weight: 900;
+  font-size: 10px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  max-width: 100px;
+  padding: 15px 30px;
+  background-color: transparent;
+  border: 2px solid $events-sub;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  transition: color $transition, background-color $transition,
+    border-color $transition;
+  .star-link:hover ~ &,
+  .star-link:focus ~ & {
+    color: $darkGray;
+    background-color: $accent;
+    border-color: $accent;
+  }
+}
