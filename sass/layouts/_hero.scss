@@ -40,6 +40,8 @@
   margin-bottom: 40px;
   @include tablet {
     font-size: 16px;
+    max-width: 595px;
+    margin: 0 auto 40px;
   }
 }
 .hero-btn {
@@ -69,6 +71,7 @@
   }
   @include desktop {
     gap: 90px;
+    justify-content: space-evenly;
   }
 }
 .hero-item {
