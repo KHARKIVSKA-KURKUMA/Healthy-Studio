@@ -1,18 +1,33 @@
 .dishes {
   background-color: $black;
   .container {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 30px;
     position: relative;
+    @include desktop {
+      padding-top: 60px;
+    }
   }
   img {
     border-radius: 8px;
-    width: 335px;
+    width: 290px;
+    @include mobile-360px {
+      width: 330px;
+    }
+    @include mobile-390px {
+      width: 360px;
+    }
+    @include mobile-min {
+      width: 350px;
+    }
+    @include desktop {
+      width: 335px;
+    }
   }
 }
 .dishes-title {
   font-weight: 400;
-  font-size: 36px;
+  font-size: 22px;
   line-height: 2.5;
   text-align: center;
   letter-spacing: 0.2em;
@@ -32,6 +47,9 @@
     margin-right: auto;
     bottom: -28px;
   }
+  @include tablet {
+    font-size: 36px;
+  }
 }
 .dishes-desk {
   @extend %events-style;
@@ -46,14 +64,39 @@
   justify-content: center;
 }
 .dishes-item {
-  width: 335px;
+  width: 290px;
   background: $darkGray;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
   position: relative;
+  @include mobile-360px {
+    width: 330px;
+  }
+  @include mobile-390px {
+    width: 360px;
+  }
+  @include mobile-min {
+    width: 350px;
+  }
+  @include desktop {
+    width: 335px;
+  }
 }
 .dishes-wrap {
   padding: 28px;
+  :nth-last-child(1):hover :nth-child(n),
+  :nth-last-child(1):focus :nth-child(n) {
+    fill: $stars;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include mobile-390px {
+    align-items: stretch;
+  }
+  @include tablet {
+    display: block;
+  }
 }
 .dishes-link {
   display: block;
@@ -91,15 +134,28 @@
   letter-spacing: -0.1625px;
   color: $desk-3;
   margin-bottom: 25px;
+  text-align: center;
+  @include mobile-min {
+    text-align: left;
+  }
 }
 .review-wrap {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  @include tablet {
+    flex-wrap: nowrap;
+  }
 }
 .stars-wrap {
   margin-right: 15px;
   gap: 5px;
   display: flex;
+  margin-bottom: 15px;
+  @include mobile-390px {
+    margin-bottom: 0;
+  }
 }
 .full-stars {
   fill: $events-sub;
@@ -129,10 +185,13 @@
   font-weight: 900;
   font-size: 12px;
   letter-spacing: 1.5px;
+  padding-bottom: 12px;
   color: $grey-again;
+  @include mobile-390px {
+    padding-bottom: 0;
+  }
 }
 .dishes-btn {
-  margin-left: auto;
   font-weight: 900;
   font-size: 10px;
   text-align: center;
@@ -153,5 +212,18 @@
     color: $darkGray;
     background-color: $accent;
     border-color: $accent;
+  }
+  &:hover,
+  &:focus {
+    color: $darkGray;
+    background-color: $accent;
+    border-color: $accent;
+  }
+  @include mobile-360px {
+    padding: 15px 60px;
+  }
+  @include mobile-390px {
+    margin-left: auto;
+    padding: 15px 30px;
   }
 }
