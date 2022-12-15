@@ -2,8 +2,17 @@
   background-color: $black;
   .container {
     position: relative;
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 30px;
+    @include mobile-360px {
+      padding-top: 140px;
+    }
+    @include mobile {
+      padding-top: 180px;
+    }
+    @include tablet {
+      padding-top: 50px;
+    }
     @include desktop {
       padding-top: 60px;
     }
@@ -20,7 +29,7 @@
   position: relative;
   z-index: 3;
   margin-bottom: 90px;
-  padding-top: 35px;
+  padding-top: 24px;
   &::after {
     content: '';
     position: absolute;
@@ -46,8 +55,17 @@
   @extend %events-style;
   top: 0;
   z-index: 1;
-  padding-top: 80px;
+  padding-top: 120px;
   @extend %center-absolute;
+  @include mobile-360px {
+    padding-top: 160px;
+  }
+  @include mobile {
+    padding-top: 207px;
+  }
+  @include tablet {
+    padding-top: 80px;
+  }
   @include desktop {
     padding-top: 28px;
   }

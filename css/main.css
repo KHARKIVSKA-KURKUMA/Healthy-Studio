@@ -516,36 +516,47 @@ body {
 }
 .about .multiple-items {
   margin: 0 auto;
-  width: 250px;
-}
-@media screen and (min-width: 360px) {
-  .about .multiple-items {
-    width: 280px;
-  }
-}
-@media screen and (min-width: 390px) {
-  .about .multiple-items {
-    width: 300px;
-  }
-}
-@media screen and (min-width: 430px) {
-  .about .multiple-items {
-    width: 310px;
-  }
-}
-@media screen and (min-width: 480px) {
-  .about .multiple-items {
-    width: 355px;
-  }
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .about .multiple-items {
+    display: block;
     width: 600px;
   }
 }
 @media screen and (min-width: 1200px) {
   .about .multiple-items {
     width: 735px;
+  }
+}
+
+.multiple-items-mob {
+  margin: 0 auto;
+  width: 250px;
+}
+@media screen and (min-width: 360px) {
+  .multiple-items-mob {
+    width: 280px;
+  }
+}
+@media screen and (min-width: 390px) {
+  .multiple-items-mob {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 430px) {
+  .multiple-items-mob {
+    width: 310px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .multiple-items-mob {
+    width: 355px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .multiple-items-mob {
+    display: none;
   }
 }
 
@@ -629,8 +640,23 @@ body {
 }
 .work .container {
   position: relative;
-  padding-top: 50px;
+  padding-top: 100px;
   padding-bottom: 30px;
+}
+@media screen and (min-width: 360px) {
+  .work .container {
+    padding-top: 140px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .work .container {
+    padding-top: 180px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .work .container {
+    padding-top: 50px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .work .container {
@@ -649,7 +675,7 @@ body {
   position: relative;
   z-index: 3;
   margin-bottom: 90px;
-  padding-top: 35px;
+  padding-top: 24px;
 }
 .work-title::after {
   content: "";
@@ -679,7 +705,22 @@ body {
   position: absolute;
   top: 0;
   z-index: 1;
-  padding-top: 80px;
+  padding-top: 120px;
+}
+@media screen and (min-width: 360px) {
+  .work-desk {
+    padding-top: 160px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .work-desk {
+    padding-top: 207px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .work-desk {
+    padding-top: 80px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .work-desk {
