@@ -31,26 +31,27 @@
       width: 735px;
     }
   }
+  .multiple-items-mob {
+    margin: 0 auto;
+    width: 250px;
+    @include mobile-360px {
+      width: 280px;
+    }
+    @include mobile-390px {
+      width: 300px;
+    }
+    @include mobile-min {
+      width: 310px;
+    }
+    @include mobile {
+      width: 355px;
+    }
+    @include tablet {
+      display: none;
+    }
+  }
 }
-.multiple-items-mob {
-  margin: 0 auto;
-  width: 250px;
-  @include mobile-360px {
-    width: 280px;
-  }
-  @include mobile-390px {
-    width: 300px;
-  }
-  @include mobile-min {
-    width: 310px;
-  }
-  @include mobile {
-    width: 355px;
-  }
-  @include tablet {
-    display: none;
-  }
-}
+
 .about-title {
   font-weight: 400;
   font-size: 16px;

@@ -529,33 +529,32 @@ body {
     width: 735px;
   }
 }
-
-.multiple-items-mob {
+.about .multiple-items-mob {
   margin: 0 auto;
   width: 250px;
 }
 @media screen and (min-width: 360px) {
-  .multiple-items-mob {
+  .about .multiple-items-mob {
     width: 280px;
   }
 }
 @media screen and (min-width: 390px) {
-  .multiple-items-mob {
+  .about .multiple-items-mob {
     width: 300px;
   }
 }
 @media screen and (min-width: 430px) {
-  .multiple-items-mob {
+  .about .multiple-items-mob {
     width: 310px;
   }
 }
 @media screen and (min-width: 480px) {
-  .multiple-items-mob {
+  .about .multiple-items-mob {
     width: 355px;
   }
 }
 @media screen and (min-width: 768px) {
-  .multiple-items-mob {
+  .about .multiple-items-mob {
     display: none;
   }
 }
