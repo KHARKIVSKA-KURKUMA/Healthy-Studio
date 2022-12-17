@@ -1,0 +1,314 @@
+.recipes {
+  background-color: $black;
+  padding-bottom: 30px;
+  .container {
+    padding-top: 90px;
+    position: relative;
+  }
+}
+.recipes-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 2.5;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: capitalize;
+  color: $title;
+  z-index: 2;
+  position: relative;
+  margin-bottom: 70px;
+  &::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 60px;
+    background-color: $accent;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: -30px;
+    @include desktop {
+      bottom: -40px;
+    }
+  }
+  @include mobile {
+    font-size: 24px;
+  }
+  @include desktop {
+    font-size: 36px;
+  }
+}
+.recipes-desk {
+  @extend %events-style;
+  @extend %center-absolute;
+  top: 75px;
+  z-index: 1;
+  @include mobile {
+    top: 70px;
+  }
+  @include desktop {
+    top: 60px;
+  }
+}
+.recipe-wrap {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+  @include desktop {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+.recipes-breakfast {
+  max-width: 290px;
+  max-height: 510px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  background-image: url(../img/recipes-bg-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  padding: 30px 20px;
+  border-radius: 8px;
+  @include mobile-360px {
+    max-width: 330px;
+  }
+  @include mobile-390px {
+    max-width: 360px;
+  }
+  @include mobile-min {
+    max-width: 400px;
+  }
+  @include mobile {
+    max-width: 440px;
+  }
+  @include tablet {
+    max-width: 540px;
+    padding: 60px 90px;
+  }
+}
+.breakfast-link {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 20px;
+  right: 20px;
+  @include desktop {
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+  }
+}
+.breakfast-link-icon {
+  fill: $white;
+}
+.time-name {
+  font-weight: 900;
+  font-size: 10px;
+  line-height: 2.5;
+  text-align: center;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  color: $white;
+  margin-bottom: 25px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 2px 15px;
+  border-radius: 5px;
+  @include desktop {
+    margin-bottom: 55px;
+  }
+}
+.breakfast-data {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.14;
+  color: $white;
+  margin-bottom: 25px;
+}
+.breakfast-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.67;
+  text-align: center;
+  color: $white;
+  margin-bottom: 45px;
+  @include tablet {
+    font-size: 24px;
+  }
+}
+.recipes-author {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.14;
+  color: $white;
+}
+.view-count-wrap-breakfast {
+  display: flex;
+  margin-top: auto;
+  align-items: center;
+}
+
+.views-icon {
+  margin-right: 14px;
+  fill: $white;
+}
+.views-counts {
+  margin-right: 24px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 2.5;
+  color: $white;
+}
+.comments-icon {
+  margin-right: 14px;
+  fill: $white;
+}
+.comments-count {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 2.5;
+  color: $white;
+  @include desktop {
+    margin-right: 24px;
+  }
+}
+.recipes-list {
+  display: flex;
+  flex-direction: column;
+}
+.recipes-item {
+  background-color: $recipe;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  &:first-child {
+    background: $darkGray;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  &:nth-child(2) {
+    background-image: url(../img/recipes-bg-dinner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto 30px;
+    max-width: 100%;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.recipes-item-link {
+  max-width: 290px;
+  padding: 10px;
+  display: block;
+  @include mobile-360px {
+    max-width: 330px;
+    padding: 25px;
+  }
+  @include mobile-390px {
+    max-width: 360px;
+    padding: 40px;
+  }
+  @include mobile-min {
+    max-width: 400px;
+    padding: 20px;
+  }
+  @include mobile {
+    max-width: 440px;
+    padding: 25px;
+  }
+  @include tablet {
+    max-width: 540px;
+    padding: 20px 40px;
+  }
+  @include desktop {
+    padding: 20px 5px 20px 30px;
+  }
+}
+.recipes-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.88;
+  color: $white;
+  margin-bottom: 10px;
+  @include mobile-360px {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  @include tablet {
+    font-size: 16px;
+  }
+  @include desktop {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+}
+.under-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  @include mobile-390px {
+    row-gap: 15px;
+  }
+  @include desktop {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+}
+.view-count-wrap {
+  display: flex;
+  align-items: center;
+  @include mobile-min {
+    margin-left: auto;
+  }
+}
+.time-item-name {
+  font-weight: 900;
+  font-size: 10px;
+  line-height: 2.5;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  color: $white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2px 5px;
+  width: 65px;
+  text-align: center;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+.recipes-data {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.14;
+  color: $white;
+}
+.last-item {
+  background-color: $accent;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+}
+.last-text {
+  color: $darkGray;
+}
+.sweets {
+  background-color: #000000;
+}
+.sweets-data {
+  color: $black;
+}
+.sweets-icon {
+  fill: black;
+}
+.sweets-counts {
+  color: black;
+}

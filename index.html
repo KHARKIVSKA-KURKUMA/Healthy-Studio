@@ -595,38 +595,42 @@
         </div>
       </section>
       <!-- ------------------------------- recipes ------------------------------- -->
-      <section class="recipes is-hidden">
+      <section class="recipes">
         <div class="container">
           <h2 class="recipes-title">Recipes From Our Chefs</h2>
           <p class="recipes-desk">Recipes</p>
-          <div class="recipes-breakfast">
-            <a href="" class="breakfast-link link">
-              <svg class="breakfast-link-icon" width="20" height="20">
-                <use href="./img/icons.svg#icon-arrow-left"></use>
-              </svg>
-            </a>
-            <h3 class="time-name">breakfast</h3>
-            <p class="breakfast-data">05 Jul 2016</p>
-            <p class="breakfast-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit
-            </p>
-            <p class="recipes-author">Jason Keller</p>
-            <div class="view-count-wrap">
-              <svg class="views-icon" width="20" height="20">
-                <use href="./img/icons.svg#icon-eye"></use>
-              </svg>
-              <p class="views-counts">275</p>
-              <svg class="comments-icon" width="20" height="20">
-                <use href="./img/icons.svg#icon-bubbles"></use>
-              </svg>
-              <p class="comments-count">12</p>
-              <ul class="recipes-list list">
-                <li class="recipes-item">
-                  <a href="" class="recipes-item-link link">
-                    <p class="recipes-text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut
-                    </p>
+          <div class="recipe-wrap">
+            <div class="recipes-breakfast">
+              <a href="" class="breakfast-link link">
+                <svg class="breakfast-link-icon" width="20" height="20">
+                  <use href="./img/icons.svg#icon-arrow-left"></use>
+                </svg>
+              </a>
+              <h3 class="time-name">breakfast</h3>
+              <p class="breakfast-data">05 Jul 2016</p>
+              <p class="breakfast-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              </p>
+              <p class="recipes-author">Jason Keller</p>
+              <div class="view-count-wrap-breakfast">
+                <svg class="views-icon" width="20" height="20">
+                  <use href="./img/icons.svg#icon-eye"></use>
+                </svg>
+                <p class="views-counts">275</p>
+                <svg class="comments-icon" width="20" height="20">
+                  <use href="./img/icons.svg#icon-bubbles"></use>
+                </svg>
+                <p class="comments-count">12</p>
+              </div>
+            </div>
+            <ul class="recipes-list list">
+              <li class="recipes-item">
+                <a href="" class="recipes-item-link link">
+                  <p class="recipes-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut
+                  </p>
+                  <div class="under-wrap">
                     <h3 class="time-item-name">lunch</h3>
                     <p class="recipes-data">07 Jan 2016</p>
                     <div class="view-count-wrap">
@@ -639,14 +643,16 @@
                       </svg>
                       <p class="comments-count">12</p>
                     </div>
-                  </a>
-                </li>
-                <li class="recipes-item">
-                  <a href="" class="recipes-item-link link"
-                    ><p class="recipes-text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut
-                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="recipes-item">
+                <a href="" class="recipes-item-link link"
+                  ><p class="recipes-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut
+                  </p>
+                  <div class="under-wrap">
                     <h3 class="time-item-name">dinner</h3>
                     <p class="recipes-data">07 Jan 2016</p>
                     <div class="view-count-wrap">
@@ -658,31 +664,41 @@
                         <use href="./img/icons.svg#icon-bubbles"></use>
                       </svg>
                       <p class="comments-count">12</p>
-                    </div></a
-                  >
-                </li>
-                <li class="recipes-item">
-                  <a href="" class="recipes-item-link link"
-                    ><p class="recipes-text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut
-                    </p>
-                    <h3 class="time-item-name">sweets</h3>
-                    <p class="recipes-data">07 Jan 2016</p>
+                    </div>
+                  </div></a
+                >
+              </li>
+              <li class="recipes-item last-item">
+                <a href="" class="recipes-item-link link"
+                  ><p class="recipes-text last-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut
+                  </p>
+                  <div class="under-wrap">
+                    <h3 class="time-item-name sweets">sweets</h3>
+                    <p class="recipes-data sweets-data">07 Jan 2016</p>
                     <div class="view-count-wrap">
-                      <svg class="views-icon" width="20" height="20">
+                      <svg
+                        class="views-icon sweets-icon"
+                        width="20"
+                        height="20"
+                      >
                         <use href="./img/icons.svg#icon-eye"></use>
                       </svg>
-                      <p class="views-counts">275</p>
-                      <svg class="comments-icon" width="20" height="20">
+                      <p class="views-counts sweets-counts">275</p>
+                      <svg
+                        class="comments-icon sweets-icon"
+                        width="20"
+                        height="20"
+                      >
                         <use href="./img/icons.svg#icon-bubbles"></use>
                       </svg>
-                      <p class="comments-count">12</p>
-                    </div></a
-                  >
-                </li>
-              </ul>
-            </div>
+                      <p class="comments-count sweets-counts">12</p>
+                    </div>
+                  </div></a
+                >
+              </li>
+            </ul>
           </div>
         </div>
       </section>
