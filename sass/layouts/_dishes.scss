@@ -4,6 +4,9 @@
     padding-top: 40px;
     padding-bottom: 30px;
     position: relative;
+    @include mobile {
+      padding-top: 50px;
+    }
     @include desktop {
       padding-top: 60px;
     }
@@ -21,7 +24,7 @@
       width: 350px;
     }
     @include desktop {
-      width: 335px;
+      width: 320px;
     }
   }
 }
@@ -47,6 +50,9 @@
     margin-right: auto;
     bottom: -28px;
   }
+  @include mobile {
+    font-size: 24px;
+  }
   @include tablet {
     font-size: 36px;
   }
@@ -54,8 +60,7 @@
 .dishes-desk {
   @extend %events-style;
   @extend %center-absolute;
-  top: 0;
-  padding-top: 30px;
+  top: 30px;
 }
 .dishes-list {
   display: flex;
@@ -79,7 +84,7 @@
     width: 350px;
   }
   @include desktop {
-    width: 335px;
+    width: 320px;
   }
 }
 .dishes-wrap {

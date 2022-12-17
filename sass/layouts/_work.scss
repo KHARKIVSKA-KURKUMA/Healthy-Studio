@@ -96,6 +96,9 @@
   &:focus {
     background-color: $accent;
   }
+  @include desktop {
+    width: 243px;
+  }
 }
 
 .work-subtitle {

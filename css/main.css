@@ -12,7 +12,7 @@
   margin: -1px;
 }
 
-.dishes-desk, .work-desk, .about-subtitle {
+.chefs-desk, .dishes-desk, .work-desk, .about-subtitle {
   font-weight: 900;
   font-size: 50px;
   line-height: 1.5;
@@ -24,17 +24,17 @@
   z-index: 1;
 }
 @media screen and (min-width: 480px) {
-  .dishes-desk, .work-desk, .about-subtitle {
+  .chefs-desk, .dishes-desk, .work-desk, .about-subtitle {
     font-size: 70px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .dishes-desk, .work-desk, .about-subtitle {
+@media screen and (min-width: 1100px) {
+  .chefs-desk, .dishes-desk, .work-desk, .about-subtitle {
     font-size: 100px;
   }
 }
 
-.dishes-desk, .work-desk, .about-subtitle, .about .container {
+.chefs-desk, .dishes-desk, .work-desk, .about-subtitle, .about .container {
   left: 0;
   right: 0;
   margin-left: auto;
@@ -130,9 +130,10 @@ body {
     width: 768px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   .container {
     width: 1100px;
+    padding: 0 40px;
   }
 }
 
@@ -154,7 +155,7 @@ body {
     left: -70px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   .slick-prev {
     left: -120px;
   }
@@ -178,7 +179,7 @@ body {
     right: -70px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   .slick-next {
     right: -120px;
   }
@@ -218,7 +219,7 @@ body {
     height: 50px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   .slick-prev,
 .slick-next {
     width: 60px;
@@ -377,7 +378,7 @@ body {
   text-transform: capitalize;
   color: #ffffff;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   .hero-title {
     font-size: 62px;
     max-width: 1100px;
@@ -417,7 +418,7 @@ body {
   background-color: #34c759;
   margin-bottom: 70px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   .hero-btn {
     padding: 25px 55px;
   }
@@ -432,7 +433,7 @@ body {
     gap: 50px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   .hero-list {
     gap: 90px;
     justify-content: space-evenly;
@@ -497,7 +498,7 @@ body {
     height: 350px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   .about {
     height: 450px;
   }
@@ -509,7 +510,7 @@ body {
   top: -280px;
   z-index: 10;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   .about .container {
     width: 1040px;
   }
@@ -524,7 +525,7 @@ body {
     width: 600px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   .about .multiple-items {
     width: 735px;
   }
@@ -583,7 +584,7 @@ body {
     padding-top: 68px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   .about-title {
     padding-top: 95px;
   }
@@ -606,7 +607,7 @@ body {
     font-size: 16px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   .about-desk {
     max-width: 740px;
     margin: 0 auto;
@@ -626,7 +627,7 @@ body {
     margin: 10px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   .item {
     width: 350px;
     height: 270px;
@@ -657,7 +658,7 @@ body {
     padding-top: 50px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   .work .container {
     padding-top: 60px;
   }
@@ -693,7 +694,7 @@ body {
     padding-top: 50px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   .work-title {
     font-size: 36px;
     padding-top: 0;
@@ -721,7 +722,7 @@ body {
     padding-top: 80px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   .work-desk {
     padding-top: 28px;
   }
@@ -740,7 +741,7 @@ body {
     justify-content: center;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   .work-list {
     flex-wrap: nowrap;
     justify-content: space-around;
@@ -757,6 +758,11 @@ body {
 }
 .work-link:hover, .work-link:focus {
   background-color: #34c759;
+}
+@media screen and (min-width: 1100px) {
+  .work-link {
+    width: 243px;
+  }
 }
 
 .work-subtitle {
@@ -807,7 +813,12 @@ body {
   padding-bottom: 30px;
   position: relative;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 480px) {
+  .dishes .container {
+    padding-top: 50px;
+  }
+}
+@media screen and (min-width: 1100px) {
   .dishes .container {
     padding-top: 60px;
   }
@@ -831,9 +842,9 @@ body {
     width: 350px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   .dishes img {
-    width: 335px;
+    width: 320px;
   }
 }
 
@@ -860,6 +871,11 @@ body {
   margin-right: auto;
   bottom: -28px;
 }
+@media screen and (min-width: 480px) {
+  .dishes-title {
+    font-size: 24px;
+  }
+}
 @media screen and (min-width: 768px) {
   .dishes-title {
     font-size: 36px;
@@ -867,8 +883,7 @@ body {
 }
 
 .dishes-desk {
-  top: 0;
-  padding-top: 30px;
+  top: 30px;
 }
 
 .dishes-list {
@@ -900,9 +915,9 @@ body {
     width: 350px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   .dishes-item {
-    width: 335px;
+    width: 320px;
   }
 }
 
@@ -1071,5 +1086,139 @@ body {
   .dishes-btn {
     margin-left: auto;
     padding: 15px 30px;
+  }
+}
+
+.chefs {
+  background-color: #1a1a1a;
+}
+.chefs .container {
+  padding-bottom: 30px;
+  position: relative;
+  padding-top: 30px;
+}
+@media screen and (min-width: 480px) {
+  .chefs .container {
+    padding-top: 50px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .chefs .container {
+    padding-top: 105px;
+  }
+}
+
+.chefs-title {
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 2.5;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: capitalize;
+  color: #d9d9d9;
+  z-index: 2;
+  position: relative;
+}
+.chefs-title::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 60px;
+  background-color: #34c759;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: -30px;
+}
+@media screen and (min-width: 1100px) {
+  .chefs-title::after {
+    bottom: -50px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .chefs-title {
+    font-size: 36px;
+  }
+}
+
+.chefs-desk {
+  top: 20px;
+  z-index: 1;
+}
+@media screen and (min-width: 480px) {
+  .chefs-desk {
+    top: 30px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .chefs-desk {
+    top: 80px;
+  }
+}
+
+.chefs-list {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 90px;
+  justify-content: center;
+}
+@media screen and (min-width: 1100px) {
+  .chefs-list {
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
+}
+
+.chefs-wrap {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+.chefs-wrap img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+
+.chefs-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: -0.225px;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.which-process {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: -0.15px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.img-wrap {
+  display: flex;
+  gap: 20px;
+}
+.img-wrap img {
+  width: 55px;
+  height: 55px;
+  border-radius: 5px;
+}
+@media screen and (min-width: 390px) {
+  .img-wrap img {
+    width: 65px;
+    height: 65px;
+  }
+}
+.img-wrap .chefs-big-img {
+  width: 140px;
+}
+@media screen and (min-width: 390px) {
+  .img-wrap .chefs-big-img {
+    width: 150px;
   }
 }/*# sourceMappingURL=main.css.map */

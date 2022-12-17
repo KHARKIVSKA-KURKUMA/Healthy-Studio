@@ -1,0 +1,110 @@
+.chefs {
+  background-color: $black;
+  .container {
+    padding-bottom: 30px;
+    position: relative;
+    padding-top: 30px;
+    @include mobile {
+      padding-top: 50px;
+    }
+    @include desktop {
+      padding-top: 105px;
+    }
+  }
+}
+.chefs-title {
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 2.5;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: capitalize;
+  color: $title;
+  z-index: 2;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 60px;
+    background-color: $accent;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: -30px;
+    @include desktop {
+      bottom: -50px;
+    }
+  }
+  @include desktop {
+    font-size: 36px;
+  }
+}
+.chefs-desk {
+  @extend %events-style;
+  @extend %center-absolute;
+  top: 20px;
+  z-index: 1;
+  @include mobile {
+    top: 30px;
+  }
+  @include desktop {
+    top: 80px;
+  }
+}
+.chefs-list {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 90px;
+  justify-content: center;
+  @include desktop {
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
+}
+.chefs-wrap {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+  img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+  }
+}
+.chefs-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: -0.225px;
+  color: $white;
+  margin-bottom: 6px;
+}
+.which-process {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: -0.15px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.img-wrap {
+  display: flex;
+  gap: 20px;
+  img {
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+    @include mobile-390px {
+      width: 65px;
+      height: 65px;
+    }
+  }
+  .chefs-big-img {
+    width: 140px;
+    @include mobile-390px {
+      width: 150px;
+    }
+  }
+}
