@@ -1,4 +1,5 @@
 $('.multiple-items').slick({
-  infinite: true,
   slidesToShow: 2,
+  infinite: true,
 });
+// десктопна карусель
