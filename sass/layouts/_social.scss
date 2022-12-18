@@ -2,7 +2,13 @@
   .container {
     position: relative;
     padding-top: 90px;
-    padding-bottom: 120px;
+    padding-bottom: 30px;
+    @include mobile {
+      padding-bottom: 60px;
+    }
+    @include desktop {
+      padding-bottom: 90px;
+    }
   }
 }
 .social-title {
