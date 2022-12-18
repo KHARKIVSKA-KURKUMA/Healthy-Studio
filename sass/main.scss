@@ -10,6 +10,7 @@
 /* ------------------------------- components ------------------------------- */
 @import './components/container';
 @import './components/carousel-nav';
+
 /* --------------------------------- layouts -------------------------------- */
 @import './layouts/header';
 @import './layouts/hero';
@@ -23,3 +24,4 @@
 // @import '';
 @import './layouts/location';
 @import './layouts/footer';
+@import './components/modal';

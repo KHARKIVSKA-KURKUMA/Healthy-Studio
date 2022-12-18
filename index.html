@@ -22,7 +22,7 @@
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body>
+  <body data-no-scroll>
     <!-- ------------------------------- header -------------------------------- -->
     <header class="header">
       <div class="container">
@@ -91,7 +91,9 @@
             & marinating, so you can cook a fresh homemade dinner in just 15
             minutes.
           </p>
-          <button type="button" class="hero-btn btn">Order Now</button>
+          <button type="button" class="hero-btn btn" data-modal-open>
+            Order Now
+          </button>
           <ul class="hero-list list">
             <li class="hero-item">
               <svg class="hero-icon" width="20" height="20">
@@ -896,6 +898,95 @@
         </p>
       </div>
     </footer>
+    <!-- -------------------------------- MODAL -------------------------------- -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-icon" width="11" height="11">
+            <use href="./img/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Leave your details, we will call you back!</p>
+        <form class="modal-form">
+          <div class="input-filed">
+            <label for="user-name" class="modal-desc">Name</label>
+            <div class="input-wrap">
+              <input
+                type="text"
+                class="form-input"
+                name="user-name"
+                required
+                id="user-name"
+              />
+              <svg class="input-icon" width="18" height="18">
+                <use href="./img/icons.svg#icon-modal-name"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input-filed">
+            <label for="user-tel" class="modal-desc">Number</label>
+            <div class="input-wrap">
+              <input
+                type="tel"
+                class="form-input"
+                name="user-tel"
+                required
+                id="user-tel"
+              />
+              <svg class="input-icon" width="18" height="18">
+                <use href="./img/icons.svg#icon-modale-tel"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input-filed">
+            <label for="user-email" class="modal-desc">Mail</label>
+            <div class="input-wrap">
+              <input
+                type="email"
+                class="form-input"
+                name="user-email"
+                id="user-email"
+                required
+              />
+              <svg class="input-icon" width="18" height="18">
+                <use href="./img/icons.svg#icon-modal-mail"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input-filed-comment">
+            <label for="user-comment" class="modal-desc">Comment</label>
+            <textarea
+              class="form-input-comment"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Enter the text"
+            ></textarea>
+          </div>
+          <div class="modal-agreement">
+            <input
+              class="agreement-checkbox visually-hidden"
+              type="checkbox"
+              name="agreement"
+              id="agreement"
+              value="yes"
+            />
+            <label for="agreement" class="agreement-desk">
+              <span
+                ><svg class="check-icon" width="16" height="15">
+                  <use href="./img/icons.svg#icon-checkbox"></use></svg
+              ></span>
+              I agree with the mailing and accept
+              <a href="" class="agreement-link link"
+                >the Terms of the Agreement</a
+              >
+            </label>
+          </div>
+          <button type="submit" class="form-btn-send">Send</button>
+        </form>
+      </div>
+    </div>
+    <!-- ----------------------------------------------------------------------- -->
     <script src="./js/jquery-3.6.1.min.js"></script>
     <script src="./js/jquery-migrate-1.2.1.min.js"></script>
     <script
@@ -904,6 +995,7 @@
     ></script>
     <script src="./js/carousel.js"></script>
     <script src="./js/carousel-2.js"></script>
+    <script src="./js/modal.js"></script>
     <script src="./js/menu-mob.js"></script>
   </body>
 </html>
