@@ -2,10 +2,9 @@
   .container {
     position: relative;
     padding-top: 90px;
-    padding-bottom: 30px;
+    padding-bottom: 120px;
   }
 }
-
 .social-title {
   font-weight: 400;
   font-size: 18px;
@@ -54,12 +53,20 @@
 .social-list {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  @include desktop {
+    flex-wrap: nowrap;
+  }
 }
 .social-item {
-  width: 330px;
+  width: 290px;
   max-height: 350px;
   background-color: $darkGray;
   border-radius: 6px;
+  @include mobile-360px {
+    width: 330px;
+  }
 }
 .soc-head {
   padding: 25px;
@@ -68,7 +75,7 @@
   align-items: center;
 }
 .soc-link {
-  margin-right: 20px;
+  margin-right: 10px;
   width: 40px;
   height: 40px;
   border: 2px solid $events;
@@ -77,6 +84,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @include mobile-360px {
+    margin-right: 20px;
+  }
 }
 .soc-icon {
   width: 15px;
@@ -85,9 +95,12 @@
 }
 .soc-name {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 2.14;
   color: $social-col;
+  @include mobile-360px {
+    font-size: 14px;
+  }
 }
 .follow-btn {
   margin-left: auto;
@@ -98,36 +111,52 @@
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  padding: 15px;
+  padding: 15px 10px;
   background-color: transparent;
   border: 2px solid $events;
-  transition: background $transition-2, border-color $transition-2, color $tra;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color $transition-2, border-color $transition-2,
+    color $transition-2;
   &:hover,
   &:focus {
     background-color: $accent;
     border-color: $accent;
     color: $white;
   }
+  @include mobile-360px {
+    padding: 15px;
+  }
 }
 .soc-wrap {
   padding: 25px;
 }
 .post-data {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 2.14;
   color: $lightGray;
   margin-bottom: 10px;
+  @include mobile-360px {
+    font-size: 14px;
+  }
 }
 .soc-text {
   margin-bottom: 10px;
   color: rgba(255, 255, 255, 0.7);
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.8;
+  @include mobile-360px {
+    font-size: 14px;
+  }
 }
 .twitter-author {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 2.14;
   color: $accent;
+  @include mobile-360px {
+    font-size: 14px;
+  }
 }
 
 .instagram-slider {
@@ -155,9 +184,14 @@
     }
   }
 }
-.img-wrap {
+.soc-img-wrap {
   img {
-    width: 92px;
-    height: 92px;
+    width: 75px;
+    height: 80px;
+    border-radius: 6px;
+    @include mobile-360px {
+      width: 92px;
+      height: 94px;
+    }
   }
 }

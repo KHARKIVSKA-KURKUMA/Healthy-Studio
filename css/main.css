@@ -67,6 +67,9 @@ address {
 
 img {
   display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -1620,7 +1623,7 @@ body {
 .social .container {
   position: relative;
   padding-top: 90px;
-  padding-bottom: 30px;
+  padding-bottom: 120px;
 }
 
 .social-title {
@@ -1681,13 +1684,25 @@ body {
 .social-list {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media screen and (min-width: 1100px) {
+  .social-list {
+    flex-wrap: nowrap;
+  }
 }
 
 .social-item {
-  width: 330px;
+  width: 290px;
   max-height: 350px;
   background-color: #252525;
   border-radius: 6px;
+}
+@media screen and (min-width: 360px) {
+  .social-item {
+    width: 330px;
+  }
 }
 
 .soc-head {
@@ -1698,7 +1713,7 @@ body {
 }
 
 .soc-link {
-  margin-right: 20px;
+  margin-right: 10px;
   width: 40px;
   height: 40px;
   border: 2px solid #303030;
@@ -1707,6 +1722,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (min-width: 360px) {
+  .soc-link {
+    margin-right: 20px;
+  }
 }
 
 .soc-icon {
@@ -1717,9 +1737,14 @@ body {
 
 .soc-name {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 2.14;
   color: #bfbfbf;
+}
+@media screen and (min-width: 360px) {
+  .soc-name {
+    font-size: 14px;
+  }
 }
 
 .follow-btn {
@@ -1731,14 +1756,23 @@ body {
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  padding: 15px;
+  padding: 15px 10px;
   background-color: transparent;
   border: 2px solid #303030;
-  transition: background 1050ms cubic-bezier(0.4, 0, 0.2, 1), border-color 1050ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 1050ms cubic-bezier(0.4, 0, 0.2, 1), border-color 1050ms cubic-bezier(0.4, 0, 0.2, 1), color 1050ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .follow-btn:hover, .follow-btn:focus {
   background-color: #34c759;
   border-color: #34c759;
+  color: #ffffff;
+}
+@media screen and (min-width: 360px) {
+  .follow-btn {
+    padding: 15px;
+  }
 }
 
 .soc-wrap {
@@ -1746,28 +1780,38 @@ body {
 }
 
 .post-data {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 2.14;
   color: #737373;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 360px) {
+  .post-data {
+    font-size: 14px;
+  }
 }
 
 .soc-text {
   margin-bottom: 10px;
   color: rgba(255, 255, 255, 0.7);
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.8;
+}
+@media screen and (min-width: 360px) {
+  .soc-text {
+    font-size: 14px;
+  }
 }
 
 .twitter-author {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 2.14;
   color: #34c759;
 }
-
-.img-wrap img {
-  width: 100px;
-  height: 100px;
+@media screen and (min-width: 360px) {
+  .twitter-author {
+    font-size: 14px;
+  }
 }
 
 .instagram-slider .slick-next {
@@ -1792,4 +1836,16 @@ body {
   margin-bottom: 15%;
   background: #34c759;
   fill: #303030;
+}
+
+.soc-img-wrap img {
+  width: 75px;
+  height: 80px;
+  border-radius: 6px;
+}
+@media screen and (min-width: 360px) {
+  .soc-img-wrap img {
+    width: 92px;
+    height: 94px;
+  }
 }/*# sourceMappingURL=main.css.map */
