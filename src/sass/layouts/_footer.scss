@@ -6,15 +6,16 @@
     padding-bottom: 30px;
   }
 }
-.design-author {
+.watermark-item {
+  color: $lightGray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rights-item {
   font-weight: 400;
   font-size: 12px;
   line-height: 1;
   color: $lightGray;
   position: relative;
-  &::before {
-    content: '©';
-    position: absolute;
-    left: -12px;
-  }
 }
