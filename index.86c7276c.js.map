@@ -1,0 +1,1 @@
+{"mappings":"AAAAA,EAAE,mBAAmBC,MAAM,CACzBC,aAAc,EACdC,UAAU","sources":["src/js/carousel.js"],"sourcesContent":["$('.multiple-items').slick({\n  slidesToShow: 2,\n  infinite: true,\n});\n\n// десктопна карусель\n"],"names":["$","slick","slidesToShow","infinite"],"version":3,"file":"index.86c7276c.js.map"}
