@@ -2,8 +2,14 @@ body {
   font-family: Arimo, sans-serif;
   background-color: $black;
   color: $white;
+  cursor: url(../img/cursor.cur), default;
 }
-
+a,
+button {
+  &:hover {
+    cursor: url(../img/cursor.cur), default;
+  }
+}
 .link {
   text-decoration: none;
 }
