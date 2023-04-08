@@ -4,7 +4,7 @@
     closeMenuBtn: document.querySelector('[data-menu-close]'),
     menu: document.querySelector('[data-menu]'),
     body: document.querySelector('body'),
-    menuList: document.querySelector('.header-menu-list'),
+    menuList: document.querySelector('.header-mob-list'),
   };
   refs.openMenuBtn.addEventListener('click', toggleMenu);
   refs.closeMenuBtn.addEventListener('click', toggleMenu);
@@ -16,6 +16,5 @@
   }
   function removeMenu() {
     refs.menu.classList.add('is-hidden');
-    refs.body.classList.remove('no-scroll');
   }
 })();
