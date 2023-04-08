@@ -9,6 +9,7 @@ function scrollFunction() {
     document.documentElement.scrollTop > 800
   ) {
     upBtn.style.display = 'flex';
+    upBtn.classList.remove('is-hidden');
   } else {
     upBtn.style.display = 'none';
   }
