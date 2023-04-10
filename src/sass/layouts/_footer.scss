@@ -18,6 +18,9 @@
   line-height: 1;
   color: $lightGray;
   position: relative;
+  a {
+    text-decoration: none;
+  }
 }
 .up {
   position: fixed;
